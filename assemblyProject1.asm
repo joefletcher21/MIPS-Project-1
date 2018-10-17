@@ -7,3 +7,9 @@
   	syscall
   	addi $a0,$a0, 2       # 2
   	syscall
+  	addi $a0,$a0, 6       # 8
+  	syscall
+  	sub $a0, $a0, 2       # 6  	
+  	syscall
+  	sub $a0, $a0, 5       # 1  	
+  	syscall
