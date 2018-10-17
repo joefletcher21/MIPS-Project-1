@@ -37,3 +37,12 @@
   	syscall
   	addi $a0, $a0, 13     # r
   	syscall
+  	sub $a0, $a0, 70      # ,
+  	syscall
+  	sub $a0, $a0, 12      # SPACE 	
+  	syscall
+   	addi $a0, $a0, 42     # J
+  	syscall
+  	addi $a0, $a0, 37     # o 	
+  	syscall
+  	
