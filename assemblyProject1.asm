@@ -45,4 +45,11 @@
   	syscall
   	addi $a0, $a0, 37     # o 	
   	syscall
-  	
+  	addi $a0, $a0, 4      # s	
+  	syscall
+  	sub $a0, $a0, 14      # e
+  	syscall
+  	addi $a0, $a0, 11     # p
+  	syscall
+  	sub $a0, $a0, 8      # h
+  	syscall
