@@ -21,6 +21,12 @@
   	syscall
   	sub $a0, $a0, 41      # LF (New line)  	
   	syscall
-  	addi $a0, $a0, 60       # F
+  	addi $a0, $a0, 60     # F
+  	syscall
+  	addi $a0, $a0, 38     # l  	
+  	syscall
+  	sub $a0, $a0, 7       # e  	
+  	syscall
+  	addi $a0, $a0, 15     # t
   	syscall
   	
