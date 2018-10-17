@@ -29,4 +29,11 @@
   	syscall
   	addi $a0, $a0, 15     # t
   	syscall
-  	
+  	sub $a0, $a0, 17      # c
+  	syscall
+  	addi $a0, $a0, 5      # h
+  	syscall
+  	sub $a0, $a0, 3       # e
+  	syscall
+  	addi $a0, $a0, 13     # r
+  	syscall
