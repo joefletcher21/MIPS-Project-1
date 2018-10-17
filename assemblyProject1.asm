@@ -1,9 +1,9 @@
 .text
     main:
     	li $v0, 11
-    	la $a0, 64	#@
+    	la $a0, 64	       # @
     	syscall
-  	sub $a0, $a0, 16       # 0  	
+  	sub $a0, $a0, 16      # 0  	
   	syscall
   	addi $a0,$a0, 2       # 2
   	syscall
@@ -15,7 +15,12 @@
   	syscall
   	sub $a0, $a0, 1       # 0
   	syscall
-  	addi $a0, $a0, 4       # 4  	
+  	addi $a0, $a0, 4      # 4  	
   	syscall
   	sub $a0, $a0, 1       # 3
   	syscall
+  	sub $a0, $a0, 41      # LF (New line)  	
+  	syscall
+  	addi $a0, $a0, 60       # F
+  	syscall
+  	
