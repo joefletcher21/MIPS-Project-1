@@ -1,9 +1,10 @@
 .text
     main:
-    	li $v0, 11
-    	la $a0, 64	       # @
+    	li $v0, 11        # Print chars
+    	la $a0, 64        # @
     	syscall
-  	sub $a0, $a0, 16      # 0  	
+    	sub $v0, $v0, 10       # Print integers
+    	sub $a0, $a0, 64       # 0	
   	syscall
   	addi $a0,$a0, 2       # 2
   	syscall
@@ -19,8 +20,9 @@
   	syscall
   	sub $a0, $a0, 1       # 3
   	syscall
-  	sub $a0, $a0, 41      # LF (New line)  	
-  	syscall
+  	addi $v0, $v0, 10
+    	addi $a0, $a0, 7      # NF
+    	syscall
   	addi $a0, $a0, 60     # F
   	syscall
   	addi $a0, $a0, 38     # l  	
